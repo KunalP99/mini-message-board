@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
+    <h1>Mini Message Board</h1>
     <% messages.map(message => { %>
     <li><%= message.user %>: <%= message.text %> - <%= message.added %></li>
     <% }) %>
