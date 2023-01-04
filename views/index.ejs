@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <% messages.map(message => { %>
+    <li><%= message.user %>: <%= message.text %> - <%= message.added %></li>
+    <% }) %>
+    <a href="/new">New Message</a>
+  </body>
+</html>
